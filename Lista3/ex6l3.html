@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <script language=javascript>
+        time1=prompt('Qual o primeiro time...')
+        time2=prompt('Qual o segundo time...')
+        golsTime1=parseInt(prompt('Insira os gols do primeiro time...'))
+        golsTime2=parseInt(prompt('Insira os gols do segundo time...'))
+
+       
+        if(golsTime1>golsTime2)
+        {  
+            resultado=time1
+        }
+
+        if(golsTime2>golsTime1)
+        {
+            resultado=time2
+        }
+        if(golsTime1==golsTime2)
+        {
+            resultado="O placar ficou Empatado"
+        }
+      
+        alert("O vencedor foi, "+resultado)
+       document.write("O vencedor foi, "+resultado)
+        
+    </script>
+    <body></body>
+    </head>
+</html>

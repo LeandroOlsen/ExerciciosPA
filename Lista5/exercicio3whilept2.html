@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <script language=javascript>
+        resto=0
+        divisor=0
+        primo=1
+        numero=parseInt(prompt("Informe um numero"))
+        while(primo<=numero)
+            {
+                resto=(numero%primo)
+                if (resto==0)
+                {
+                    divisor++
+                }
+                primo++
+            }
+                if (divisor==2)
+                {
+                    resultado=" é um numero primo !"
+                }
+                else
+                {
+                    resultado=" não é um numero primo !"
+                }
+        document.write(resultado)      
+
+    </script>
+    <body></body>
+    </head>
+</html>

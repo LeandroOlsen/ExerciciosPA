@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script language=javascript>
+      salario=parseFloat(prompt("Qual é o seu salário fixo?"))
+      tdavenda=parseFloat(prompt("Qual o total da sua venda?"))
+       
+        
+        if (tdavenda<=1500)
+        {
+           soma=(((3*tdavenda)/100)+salario)
+               
+        }
+            else if  (tdavenda>1500)
+        {
+            soma=((((tdavenda-1500)*5)/100)+45+salario)
+    
+        }
+            alert ("O seu salario total é de R$ " + soma .toFixed(2))
+
+        </script>
+        <body> </body>
+    </head>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <script language=javascript>
+        nome=prompt('Insira seu nome ...')
+        sexo=prompt('Insira seu sexo em letras minusculas ex: masculino / feminino ... ')
+        altura=prompt('Insira sua altura ...')
+        
+        somamasculino=parseFloat(72.7*(altura))-58
+        somafeminino=parseFloat(62.1*(altura))-44.7 
+    
+        if(sexo=='masculino')
+        {
+            alert('Seu peso ideal é '+somamasculino)
+        }
+        else{
+            alert('Você não inseriu a informação correta sobre seu sexo, confira novamente ..')
+        }
+        if(sexo=='feminino')
+        {
+            alert('Seu peso ideal é '+somafeminino)
+        }
+        else{
+            alert('Você não inseriu a informação correta sobre seu sexo, confira novamente ..')
+        }
+    </script>
+    <body></body>
+    </head>
+</html>

@@ -1,0 +1,75 @@
+<html>
+    <head>
+    <script language=javascript>
+    /* usando a função swith case desenvolva um programa que exiba um "menu" com as seguintes opçoes:
+    1 - Reais para Dolares
+    2 - Dolares para Reais
+    3 - Reais para Libras
+    4 - Libras para Reais
+    5 - Dolares para Libras
+    6 - Libras para Dolares
+    7 - Fim.
+    em seguida, solicitar um valor de conversão e exibir o resultado, de acordo com as moedas escolhidas, utilizando como referencia os valores abaixo:
+    Libras = R$ 5,14
+    Dolar = R$ 4,44
+
+    a mensagem deve ser no padrão abaixo (exemplo) :
+    O RESULTADO DO SEU CALCULO:  XXX DOLARES EQUIVALEM A XXX REAIS.*/
+    x = 1
+    vdolar = 3.99
+    veuro = 4.44
+    vlibras = 5.15
+    while(x==1)
+    {
+        valorf=0
+        
+        document.write("1 - Reais para Dolares</br>")
+        document.write("2 - Dolares para Reais</br>")
+        document.write("3 - Reais para Libras</br>")
+        document.write("4 - Libras para Reais</br>")
+        document.write("5 - Dolares para Libras</br>")
+        document.write("6 - Libras para Dolares</br>")
+        document.write("7 - Fim</br>")
+        if(opcao != "7"){
+            valor= parsFloat(prompt("Qual valor total de moedas:"))
+        }
+        switch (opcao)
+        {
+            case '1' : {                 
+            valorf= parseFloat(valo/vdolar)
+            break}
+
+            case '2' : {                 
+            valorf= parseFloat(valo*vdolar)
+            break}
+
+            case '3' : {                 
+            valorf= parseFloat(valo/vlibras)
+            break}
+
+            case '4' : {                 
+            valorf= parseFloat(valo*vlibras)
+            break}
+
+            case '5' : {                 
+            valorf= parseFloat(valo/vlibras)
+            break}
+
+            case '6' : {                 
+            valorf= parseFloat(valo*vlibras)
+            break}
+
+            case '7' : {
+                x = 2
+                break
+                default: document.write("opcao invalida")
+            }
+
+        }
+    }
+        
+            
+    </script>
+    <body></body>
+    </head>
+</html>

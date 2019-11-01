@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <script language=javascript>
+        contador=1
+        x=true
+        soma=0
+        idade=0
+        while (x)
+        {   
+            nome=prompt("Informe seu nome ")
+            idade=parseInt(prompt("Informe sua idade "))
+            idade=idade
+            soma=(soma+idade)/contador
+            resp=prompt("Continua (S/N)")
+            contador++
+            if (resp=="n" || resp=="N")
+            {
+                x = false
+            }
+
+        }
+
+        document.write("Média de Idade Geral: " + soma + "</br>" + "Total de Pessoas Lidas: " )
+        
+
+    </script>
+    <body></body>
+    </head>
+</html>

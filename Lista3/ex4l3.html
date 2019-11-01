@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <script language=javascript>
+        n1=parseInt(prompt('Insira um valor...'))
+        n2=parseInt(prompt('Insira outro valor...'))
+        n3=parseInt(prompt('Insira outro valor...'))
+
+       
+        if(n1<n2)
+        {  
+            if(n1<n3)
+            menor=n1
+        }
+        if(n2<n1)
+        {
+            if(n2<n3)
+            menor=n2
+        }
+        if(n3<n1)
+        {
+            if(n3<n2)
+            menor=n3
+        }
+        soma=((n1+n2+n3)-menor)
+       
+       alert("A soma dos 2 maiores numeros e "+ soma)
+       document.write("A soma dos 2 maiores numeros e "+ soma) 
+    </script>
+    <body></body>
+    </head>
+</html>

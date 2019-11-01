@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <script language=javascript>
+        numero=parseInt(prompt("Informe um numero"))
+        perf=1
+        soma=0
+        while(perf<numero)
+            {
+                resto=(numero%perf)
+                if (resto==0)
+                {
+                    soma=soma+perf
+                }
+                perf++
+            }
+                if (soma==numero)
+                {
+                    document.write(numero + " é um numero perfeito !")
+                }
+                else
+                {
+                    document.write(numero + " não é um numero perfeito !")
+                }
+     
+
+    </script>
+    <body></body>
+    </head>
+</html>
